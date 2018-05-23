@@ -1,0 +1,52 @@
+---
+title: "Gdański Uniwersytet Medyczny"
+author: "Dorota Bucholc"
+date: "23 maja 2018"
+output:
+  rmarkdown::html_document:
+    theme: spacelab
+---
+
+### Gdański Uniwersytet Medyczny
+
+* Akademia Lekarska w Gdańsku została utworzona 8 października 1945 roku.
+* Rektorem GUMed jest prof. dr hab. Marcin Gruchała
+* Aktualnie jest 48 osób, które otrzymały tytuł Honoris Causa
+
+### GUMed posiada różne strony internetowe:
+
+| STRONA | FUNKCJA |
+|-------------|------------------------------|
+| Biblioteka Główna | serwis internetowy Biblioteki Głównej GUMed |
+| eDziekanat | system dostępny dla studentów GUMed oraz pracowników prowadzących zajęcia dydaktyczne |
+| eLearning | uczelniana platforma zdalnej edukacji |
+| eNaukowiec | portal pracowników naukowych GUMed |
+| ePensum | system dostępny dla kierowników jednostek GUMed oraz pracowników wskazanych przez kierowników
+|ePracownik | system dostępny dla kierowników jednostek GUMed |
+| eSyllabus |system dostępny dla kierowników dydaktycznych, dziekanów, pracowników dziekanatów, starostów lat studiów |
+| EXTRANET |system dostępny dla: studentów, doktorantów, absolwentów, pracowników GUMed i szpitali klinicznych GUMed oraz emerytowanych pracowników GUMed |
+
+[strona GUMed](https://gumed.edu.pl/)
+
+### Wydziały:
+
+1. Wydział Lekarski
+2. Wydział Farmaceutyczny z Oddziałem Medycyny Laboratoryjnej
+3. Wydział Nauk o Zdrowiu z Oddziałem Pielęgniarstwa i Instytutem Medycyny Morskiej i Tropikalnej
+4. Międzyuczelniany Wydział Biotechnologii UG i GUMed
+
+#### Kody z R
+
+```{r}
+library(tidyverse)
+ggplot(data = mpg) +
+  geom_histogram (mapping = aes(displ), bins = 10) +
+  labs(title = "Rozkład pojemności silnika samochodów w zbiorze", x = "Pojemność silnika") 
+```
+
+```{r}
+cos <- c(10)
+nic <- c(8)
+mean(cos, nic)
+```
+
